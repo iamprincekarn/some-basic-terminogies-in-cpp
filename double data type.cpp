@@ -27,6 +27,17 @@ int main()
     //it print round-off value of d with 3 decimal points
     double d = 243.4236;
     cout<<fixed<<setprecision(3)<<d<<endl; 
+    
+    
+    //if the value is bigger then it will print in e-notation
+    double x = 100000000;
+    cout<<x<<endl;
+    
+    //for printing this as exact we can use fixed
+    cout<<fixed<<x<<endl;
+    
+    //for printing this as exact but with no decimal we can set its precision
+    cout<<fixed<<setprecision(0)<<x<<endl;
 
     return 0;
 }
