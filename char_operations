@@ -1,0 +1,37 @@
+if any arithmetic operation performed between two char then the answer would be integer which will be the sum of ascii value of both the characters
+#include <iostream>
+using namespace std;
+int main()
+{
+    char c1 = 'A';
+    char c2 = '!';
+    cout<<c1+c2<<endl;
+    return 0;
+}
+
+
+if we try to put this sum value in any other char variable then it will store it as the char value of that integer ascii number
+#include <iostream>
+using namespace std;
+int main()
+{
+    char c1 = 'A';
+    char c2 = '!';
+    char c3 = c1+c2;
+    cout<<c3<<endl;
+    return 0;
+}
+
+
+if one variable will be char and other is integer then the answer would be same
+#include <iostream>
+using namespace std;
+int main()
+{
+    char c1 = 'A';
+    int x = 2;
+    char c3 = c1+x;
+    cout<<c1+x<<endl;
+    cout<<c3<<endl;
+    return 0;
+}
