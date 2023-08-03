@@ -1,0 +1,12 @@
+let’s say you initialize a variable: long num = 100L;
+
+it is the same as writing: long num=100;
+
+In the latter case, Java detects that we are trying to make a long variable and hence does this:
+
+Since the number is small and fits under integer type, it assigns the variable as
+int var = 100; 
+2. It is then cast to long type.
+
+long num = (long) var; 
+To avoid this two-step process, we directly give the ‘L’ suffix to the long variable being declared. This concept applies to float and double as well. Float is assigned as a double variable by default and then cast to float type later.
